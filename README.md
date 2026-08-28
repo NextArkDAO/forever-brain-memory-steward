@@ -5,7 +5,7 @@ Memory Steward is a public-safe agentic application built for the 2026 All Thing
 ## Live Project
 
 - [Hosted application](https://memory-steward-736783846061.us-central1.run.app/)
-- [Three-minute demonstration](https://youtu.be/FGiswy8WZwQ)
+- [Three-minute demonstration](https://youtu.be/W78w8Oz-5jU)
 - Track: **Collaborative Partner**
 
 ## What It Does
