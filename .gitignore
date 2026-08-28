@@ -1,0 +1,45 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+credentials*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# JavaScript
+node_modules/
+.npm-cache/
+dist/
+.vite/
+coverage/
+
+# Google Cloud and local emulators
+.gcloud/
+.firebase/
+firestore-debug.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data, exports, and logs
+data/local/
+exports/
+logs/
+output/
+.playwright-cli/
+*.log

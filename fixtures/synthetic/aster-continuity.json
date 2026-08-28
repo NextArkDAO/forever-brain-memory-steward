@@ -1,0 +1,14 @@
+{
+  "package_id": "synthetic-aster-001",
+  "synthetic": true,
+  "format_version": "0.1.0",
+  "companion": { "id": "companion-aster", "display_name": "Aster", "owner_alias": "Morgan", "description": "A fictional planning companion created solely for the public demonstration." },
+  "assertions": [
+    { "id": "ast-001", "subject": "owner:morgan", "predicate": "morning_check_in.style", "value": "brief", "display_value": "Keep morning check-ins brief", "recorded_at": "2026-08-04T13:15:00.000Z", "source_type": "owner_statement", "source_ref": "synthetic-session-004", "state": "current" },
+    { "id": "ast-002", "subject": "owner:morgan", "predicate": "morning_check_in.style", "value": "reflective", "display_value": "Use reflective morning check-ins", "recorded_at": "2026-08-07T22:40:00.000Z", "source_type": "owner_statement", "source_ref": "synthetic-session-009", "state": "current" },
+    { "id": "ast-003", "subject": "companion:aster", "predicate": "planning.focus", "value": "one_project_at_a_time", "display_value": "Focus on one project at a time", "recorded_at": "2026-08-06T16:20:00.000Z", "source_type": "owner_statement", "source_ref": "synthetic-session-006", "state": "current" }
+  ],
+  "relations": [],
+  "approvals": [],
+  "receipts": []
+}

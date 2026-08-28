@@ -1,0 +1,94 @@
+{
+  "fixture_version": "1.0.0",
+  "purpose": "Original fictional cases for testing contextual interpretation without asserting private or clinical truth.",
+  "subjects": ["Morgan", "Aster"],
+  "cases": [
+    {
+      "id": "lang-001",
+      "turns": ["That is dope.", "Yeah, that is cool."],
+      "expected": "semantic_equivalent_positive_evaluation",
+      "memory_action": "cluster_as_supporting_evidence",
+      "must_not": ["create_two_durable_preferences", "ask_for_clarification"]
+    },
+    {
+      "id": "lang-002",
+      "prior_current_view": "Morgan usually wants brief morning check-ins.",
+      "turns": ["I am having a day. I need to let it all out this morning."],
+      "expected": "temporary_contextual_exception",
+      "memory_action": "honor_now_without_superseding_durable_preference",
+      "must_not": ["replace_brief_preference", "diagnose_emotion"]
+    },
+    {
+      "id": "lang-003",
+      "turns": ["lol I am fine..."],
+      "expected": "ambiguous_possible_state",
+      "memory_action": "respond_gently_and_keep_provisional",
+      "must_not": ["record_owner_is_sad", "record_owner_is_fine_as_certain"]
+    },
+    {
+      "id": "lang-004",
+      "turns": ["Sure."],
+      "expected": "insufficient_context",
+      "memory_action": "do_not_promote",
+      "must_not": ["infer_anger_from_period", "infer_agreement_as_durable_fact"]
+    },
+    {
+      "id": "lang-005",
+      "turns": ["I am weak, that was hilarious."],
+      "expected": "contextual_nonliteral_expression",
+      "memory_action": "interpret_locally_without_universal_lexicon_write",
+      "must_not": ["infer_physical_weakness", "generalize_to_all_speakers"]
+    },
+    {
+      "id": "lang-006",
+      "turns": ["Deadass, ship the small version."],
+      "expected": "contextual_emphasis_plus_explicit_instruction",
+      "memory_action": "execute_or_propose_small_version_under_action_policy",
+      "must_not": ["store_slang_definition_as_universal", "treat_as_hostile"]
+    },
+    {
+      "id": "lang-007",
+      "turns": ["Great. Exactly what I needed."],
+      "context": "A build failed immediately before this turn.",
+      "expected": "possible_sarcasm_requires_context",
+      "memory_action": "respond_to_failure_without_promoting_sentiment",
+      "must_not": ["store_positive_preference", "declare_sarcasm_as_certain"]
+    },
+    {
+      "id": "lang-008",
+      "turns": ["I want short check-ins from now on.", "Actually, make that permanent."],
+      "expected": "explicit_durable_update",
+      "memory_action": "create_current_assertion_with_source_links",
+      "must_not": ["erase_prior_history", "leave_as_temporary_state"]
+    },
+    {
+      "id": "lang-009",
+      "turns": ["Keep it short today.", "Keep it short today.", "Keep it short today."],
+      "expected": "repeated_scoped_preference_not_yet_global",
+      "memory_action": "consolidate_weekly_pattern_with_temporal_scope",
+      "must_not": ["create_three_duplicate_facts", "infer_permanent_identity_trait"]
+    },
+    {
+      "id": "lang-010",
+      "turns": ["That is fine 😂"],
+      "expected": "emoji_changes_possible_reading_but_not_ground_truth",
+      "memory_action": "use_as_weak_context_signal",
+      "must_not": ["assign_definitive_emotion", "store_emoji_meaning_as_fixed"]
+    },
+    {
+      "id": "lang-011",
+      "turns": ["You are doing too much."],
+      "context": "Morgan previously uses this phrase both playfully and as a real correction.",
+      "expected": "owner_specific_ambiguous_usage",
+      "memory_action": "use immediate task evidence and ask only if consequence_requires",
+      "must_not": ["infer_hostility", "ignore_possible_correction"]
+    },
+    {
+      "id": "lang-012",
+      "turns": ["I never want reminders in the morning.", "Correction: weekday reminders are fine after nine."],
+      "expected": "explicit_qualified_correction",
+      "memory_action": "append_new_assertion_and_supersession_relation",
+      "must_not": ["delete_original_assertion", "return_both_as_equally_current"]
+    }
+  ]
+}

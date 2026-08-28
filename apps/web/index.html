@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101716" />
+    <title>Continuity Steward</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/apps/web/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup"><span class="brand-mark">FB</span><div><strong>Continuity Steward</strong><span>Forever Brain / Synthetic Lab</span></div></div>
+        <div class="boundary"><span></span><span id="agent-status">Checking agent path</span></div>
+      </header>
+      <aside class="rail" aria-label="Workflow progress">
+        <p class="rail-label">Stewardship run</p>
+        <ol id="stage-list">
+          <li data-stage="import" class="active"><span>01</span>Import</li><li data-stage="inspect"><span>02</span>Inspect</li><li data-stage="clarify"><span>03</span>Clarify</li><li data-stage="approve"><span>04</span>Approve</li><li data-stage="apply"><span>05</span>Apply</li><li data-stage="verify"><span>06</span>Verify</li>
+        </ol>
+        <p class="rail-note">Source records stay intact through every stage.</p>
+      </aside>
+      <main>
+        <section class="run-heading"><div><p class="eyebrow">Owner review console</p><h1>Aster continuity review</h1><p id="run-summary">Load the fictional case to begin the stewardship run.</p></div><div class="run-state"><span>Run state</span><strong id="run-state">Ready</strong></div></section>
+        <section class="action-band"><div><p class="eyebrow">Current action</p><h2 id="action-title">Import a continuity package</h2><p id="action-copy">The demonstration uses a clearly labeled fictional companion.</p></div><button id="primary-action" type="button">Load synthetic case</button></section>
+        <section class="workspace">
+          <div class="evidence-column"><div class="section-heading"><div><p class="eyebrow">Evidence ledger</p><h2>Source records</h2></div><span id="record-count">0 records</span></div><div id="evidence-list" class="evidence-list empty-state">No package loaded.</div></div>
+          <div class="decision-column"><div class="section-heading"><div><p class="eyebrow">Steward finding</p><h2>Owner decision</h2></div><span id="finding-status">Waiting</span></div><div id="decision-panel" class="decision-panel empty-state">The Steward has not inspected the package yet.</div></div>
+        </section>
+        <section class="receipt-band"><div><p class="eyebrow">Verification receipt</p><h2 id="receipt-title">No export yet</h2></div><dl><div><dt>Originals preserved</dt><dd id="receipt-preserved">-</dd></div><div><dt>Assertions</dt><dd id="receipt-assertions">-</dd></div><div><dt>Relations</dt><dd id="receipt-relations">-</dd></div><div class="hash-row"><dt>SHA-256</dt><dd id="receipt-hash">-</dd></div></dl></section>
+      </main>
+    </div>
+    <script type="module" src="/apps/web/app.js"></script>
+  </body>
+</html>
