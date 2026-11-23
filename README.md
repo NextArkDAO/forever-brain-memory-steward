@@ -4,9 +4,13 @@ Memory Steward is a public-safe agentic application built for the 2026 All Thing
 
 ## Live Project
 
+- Track: **Collaborative Partner**
 - [Hosted application](https://memory-steward-736783846061.us-central1.run.app/)
 - [Three-minute demonstration](https://youtu.be/W78w8Oz-5jU)
-- Track: **Collaborative Partner**
+
+**11/11 automated tests passing** in the [public suite](tests/). Coverage includes contradiction detection, approval-gated durable corrections, source-record preservation, malformed model outputs, and export-tamper detection.
+
+**Fictional example.** Before review, Aster has two instructions from Morgan for morning check-ins: “keep them brief” and “make them reflective.” After Morgan approves the reflective preference, Aster appends the correction and retains both source statements in the history. [View the fixture](fixtures/synthetic/aster-continuity.json).
 
 ## What It Does
 
@@ -79,4 +83,4 @@ Every included fixture is original, fictional, and visibly labeled synthetic. Th
 
 ## Ownership
 
-Built by DemonFox Collectibles LLC d/b/a NextArk. Product decisions, acceptance, and submission authority remain human-owned. AI coding tools assisted with implementation, documentation, testing, and media preparation.
+Built by DemonFox Collectibles LLC d/b/a NextArk. Product decisions, acceptance, and submission authority remain human-owned. Dwayne Swinton owned the system design and architecture, including the boundary between model explanations and durable writes, and set the acceptance criteria for owner approval and source-record preservation. AI coding tools assisted with implementation, documentation, testing, and media preparation.
